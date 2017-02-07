@@ -9,11 +9,20 @@ html {
 
 img {
   display: inline-block;
-  margin-top: 260px;
-  margin-left: 500px;
-  margin-right: auto;
+   max-width: 100%;
+   position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 380px;
   -webkit-filter: drop-shadow(1px 1px 0 black)
                    drop-shadow(-1px -1px 0 black);
    filter: drop-shadow(1px 1px 0 black)
            drop-shadow(-1px -1px 0 black);
+
+ }
+
+ @media only screen and (max-width: 400px) {
+   /* here comes the trick..this is the css, which would be applied to all
+    * the devices whose screen has a max-width of 400px..
+    */
  }
